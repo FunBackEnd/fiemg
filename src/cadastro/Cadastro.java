@@ -31,13 +31,5 @@ public class Cadastro {
         try {
             con.close();
         } catch (Exception e) {
-            JOptionPane.showInternalMessageDialog(null, e);
-        }
-    }
-}
-  
-  
-    
-    
-       
-
+            JOptionPane.showInternalMessageDialog(null,"Erro"+e);
+      }            
