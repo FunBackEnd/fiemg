@@ -32,14 +32,15 @@ public class Cadastro {
             con.close();
         } catch (Exception e) {
             JOptionPane.showInternalMessageDialog(null,"Erro"+e);
-      }            
-//Teste
-//Teste2
+      }    
+  }
+}
 
 
 
 
-
+  
+  
  
 
  
