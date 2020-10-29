@@ -26,6 +26,7 @@ public class CadastroFrame extends javax.swing.JFrame {
         jMenu2 = new javax.swing.JMenu();
         CadastroMenu = new javax.swing.JMenu();
         CadastroItem = new javax.swing.JMenuItem();
+        AlunoItem = new javax.swing.JMenuItem();
         jMenuItem2 = new javax.swing.JMenuItem();
 
         jMenu1.setText("jMenu1");
@@ -62,6 +63,14 @@ public class CadastroFrame extends javax.swing.JFrame {
             }
         });
         CadastroMenu.add(CadastroItem);
+
+        AlunoItem.setText("Aluno");
+        AlunoItem.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                AlunoItemActionPerformed(evt);
+            }
+        });
+        CadastroMenu.add(AlunoItem);
 
         jMenuItem2.setText("Log");
         jMenuItem2.addActionListener(new java.awt.event.ActionListener() {
@@ -109,6 +118,12 @@ public class CadastroFrame extends javax.swing.JFrame {
         
     }//GEN-LAST:event_jMenuItem2ActionPerformed
 
+    private void AlunoItemActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_AlunoItemActionPerformed
+        CadAluno ca = new CadAluno();
+        ca.setVisible(true);
+        desktop.add(ca);
+    }//GEN-LAST:event_AlunoItemActionPerformed
+
    
     public static void main(String args[]) {
         /* Set the Nimbus look and feel */
@@ -143,6 +158,7 @@ public class CadastroFrame extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JMenuItem AlunoItem;
     private javax.swing.JMenuItem CadastroItem;
     private javax.swing.JMenu CadastroMenu;
     private javax.swing.JDesktopPane desktop;
